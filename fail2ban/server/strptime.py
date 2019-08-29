@@ -171,7 +171,7 @@ def reGroupDictStrptime(found_dict, msec=False, default_tz=None):
 	year = month = day = hour = minute = tzoffset = \
 	weekday = julian = week_of_year = None
 	second = fraction = 0
-	for key, val in found_dict.iteritems():
+	for key, val in found_dict.items():
 		if val is None: continue
 		# Directives not explicitly handled below:
 		#   c, x, X

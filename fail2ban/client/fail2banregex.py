@@ -244,7 +244,7 @@ class Fail2banRegex(object):
 
 	def __init__(self, opts):
 		# set local protected members from given options:
-		self.__dict__.update(dict(('_'+o,v) for o,v in opts.__dict__.iteritems()))
+		self.__dict__.update(dict(('_'+o,v) for o,v in opts.__dict__.items()))
 		self._opts = opts
 		self._maxlines_set = False		  # so we allow to override maxlines in cmdline
 		self._datepattern_set = False
@@ -424,7 +424,7 @@ class Fail2banRegex(object):
 			self.output( "Use %11s line : %s" % (regex, shortstr(value)) )
 			regex_values = {regextype: [RegexStat(value)]}
 
-		for regextype, regex_values in regex_values.iteritems():
+		for regextype, regex_values in regex_values.items():
 			regex = regextype + 'regex'
 			setattr(self, "_" + regex, regex_values)
 			for regex in regex_values:

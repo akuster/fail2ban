@@ -673,7 +673,7 @@ class Filter(JailThread):
 	# 				except:
 	# 					pass
 	# 	# update not empty values:
-	# 	mlfidGroups.update(((k,v) for k,v in fail.iteritems() if v))
+	# 	mlfidGroups.update(((k,v) for k,v in fail.items() if v))
 
 	def _mergeFailure(self, mlfid, fail, failRegex):
 		mlfidFail = self.mlfidCache.get(mlfid) if self.__mlfidCache else None
