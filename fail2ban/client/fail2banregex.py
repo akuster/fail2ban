@@ -44,7 +44,7 @@ import time
 import urllib
 from optparse import OptionParser, Option
 
-from ConfigParser import NoOptionError, NoSectionError, MissingSectionHeaderError
+from configparser import NoOptionError, NoSectionError, MissingSectionHeaderError
 
 try: # pragma: no cover
 	from ..server.filtersystemd import FilterSystemd
